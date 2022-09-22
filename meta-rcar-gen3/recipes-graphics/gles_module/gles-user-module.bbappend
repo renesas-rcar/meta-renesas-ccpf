@@ -1,2 +1,2 @@
-PROVIDES_append = " virtual/libgl"
+PROVIDES:append = " virtual/libgl"
 

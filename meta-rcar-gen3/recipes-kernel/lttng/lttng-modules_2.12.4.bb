@@ -19,12 +19,12 @@ export INSTALL_MOD_DIR="kernel/lttng-modules"
 
 EXTRA_OEMAKE += "KERNELDIR='${STAGING_KERNEL_DIR}'"
 
-do_install_append() {
+do_install:append() {
 	# Delete empty directories to avoid QA failures if no modules were built
 	find ${D}/${nonarch_base_libdir} -depth -type d -empty -exec rmdir {} \;
 }
 
-python do_package_prepend() {
+python do_package:prepend() {
     if not os.path.exists(os.path.join(d.getVar('D'), d.getVar('nonarch_base_libdir')[1:], 'modules')):
         bb.warn("%s: no modules were created; this may be due to CONFIG_TRACEPOINTS not being enabled in your kernel." % d.getVar('PN'))
 }

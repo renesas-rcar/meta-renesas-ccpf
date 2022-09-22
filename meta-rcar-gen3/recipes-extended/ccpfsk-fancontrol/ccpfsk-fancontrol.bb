@@ -28,3 +28,6 @@ do_install:append () {
     install -m 0644 ${WORKDIR}/${SYSTEMD_SERVICE_FILENAME} ${D}/${systemd_system_unitdir}
 }
 
+FILES:${PN} += " \
+    ${systemd_unitdir} \
+    "

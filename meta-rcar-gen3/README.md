@@ -27,6 +27,13 @@ Please submit any patches against the meta-renesas-ccpf/meta-rcar-gen3 layer to 
 * Maintainer: Tomohiro Komagata <tomohiro.komagata.aj at renesas.com>
 * Maintainer: Yuya Hamamachi <yuya.hamamachi.sx at renesas.com>
 
+## Donwload all layers Using repo
+
+```
+repo init -b dunfell -m dunfell.xml -u https://github.com/renesas-rcar/meta-renesas-ccpf
+repo sync
+```
+
 ## Quick Start
 
 Quick procedure to bring up:

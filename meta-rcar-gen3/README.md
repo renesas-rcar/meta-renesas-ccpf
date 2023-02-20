@@ -1,4 +1,4 @@
-# meta-docker/meta-rcar-gen3
+# meta-renesas-ccpf/meta-rcar-gen3
 
 This layer provides the configuration to use CCPF SK board with R-Car Starter Kit
 

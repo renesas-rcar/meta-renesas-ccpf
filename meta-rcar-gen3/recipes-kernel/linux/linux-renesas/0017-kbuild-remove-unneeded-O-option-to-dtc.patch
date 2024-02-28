@@ -1,7 +1,7 @@
-From 3fa810b4098382f76c28e50bbc51372d7970a210 Mon Sep 17 00:00:00 2001
+From c6779b68cb67aedab78231f0de549ef401534048 Mon Sep 17 00:00:00 2001
 From: Masahiro Yamada <masahiroy@kernel.org>
 Date: Wed, 10 Mar 2021 20:08:24 +0900
-Subject: [PATCH 19/21] kbuild: remove unneeded -O option to dtc
+Subject: [PATCH 17/19] kbuild: remove unneeded -O option to dtc
 
 This piece of code converts the target suffix to the dtc -O option:
 
@@ -64,5 +64,5 @@ index bd652f4d51e9..d05f5d400afc 100644
  		-d $(depfile).dtc.tmp $(dtc-tmp) ; \
  	cat $(depfile).pre.tmp $(depfile).dtc.tmp > $(depfile)
 -- 
-2.25.1
+2.34.1
 

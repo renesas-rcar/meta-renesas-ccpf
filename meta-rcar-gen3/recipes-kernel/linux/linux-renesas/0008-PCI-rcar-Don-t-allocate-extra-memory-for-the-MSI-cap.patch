@@ -1,7 +1,7 @@
-From b7f9653ed4d100b4ea75edad07030d919e48e50c Mon Sep 17 00:00:00 2001
+From 4e34aa489f7986d12342e018b5dfce0e0deba9aa Mon Sep 17 00:00:00 2001
 From: Marc Zyngier <maz@kernel.org>
 Date: Tue, 30 Mar 2021 16:11:33 +0100
-Subject: [PATCH 09/10] PCI: rcar: Don't allocate extra memory for the MSI
+Subject: [PATCH 08/19] PCI: rcar: Don't allocate extra memory for the MSI
  capture address
 
 A long cargo-culted behaviour of PCI drivers is to allocate memory
@@ -45,15 +45,15 @@ index 74b4a2067c02..9253d05c1798 100644
 -	unsigned long base;
 +	struct device *dev = pcie->dev;
 +	struct resource res;
- 
--	/* setup MSI data target */
--	base = virt_to_phys((void *)msi->pages);
++
 +	if (WARN_ON(of_address_to_resource(dev->of_node, 0, &res)))
 +		return;
  
+ 	/* setup MSI data target */
+-	base = virt_to_phys((void *)msi->pages);
+-
 -	rcar_pci_write_reg(pcie, lower_32_bits(base) | MSIFE, PCIEMSIALR);
 -	rcar_pci_write_reg(pcie, upper_32_bits(base), PCIEMSIAUR);
-+	/* setup MSI data target */
 +	rcar_pci_write_reg(pcie, lower_32_bits(res.start) | MSIFE, PCIEMSIALR);
 +	rcar_pci_write_reg(pcie, upper_32_bits(res.start), PCIEMSIAUR);
  
@@ -85,5 +85,5 @@ index 74b4a2067c02..9253d05c1798 100644
  }
  
 -- 
-2.25.1
+2.34.1
 

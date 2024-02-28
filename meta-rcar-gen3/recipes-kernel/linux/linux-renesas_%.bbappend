@@ -17,22 +17,20 @@ SRC_URI_append_ulcb = " \
     file://0003-arm64-dts-renesas-Add-support-for-CCPF-SK-with-R-Car.patch \
     file://0004-soc-renesas-rcar_s2ram-Add-new-support-for-S2RAM-exe.patch \
     file://0005-arm64-dts-renesas-Add-ext-interrupt-for-s2ram.patch \
-    file://0006-can-rcar_can-Fix-suspend-resume.patch \
-    file://0007-arm64-dts-renesas-Add-support-for-CCPF-SK-with-R-Car.patch \
-    file://0008-arm64-dts-renesas-Add-support-pwm0-for-CCPF-SK.patch \
-    file://0009-PCI-rcar-Don-t-allocate-extra-memory-for-the-MSI-cap.patch \
-    file://0010-PCI-rcar-Convert-to-MSI-domains.patch \
-    file://0011-gpio-pca953x-do-not-ignore-i2c-errors.patch \
-    file://0012-media-v4l2-async-workaround-for-RCAR-VIN.patch \
-    file://0013-media-platform-rcar-vin-add-GREY-format.patch \
-    file://0014-media-platform-rcar-vin-add-G-S_PARM-ioctl.patch \
-    file://0015-media-i2c-imx219-Set-subdevice-fwnode.patch \
-    file://0016-media-i2c-imx219-Set-8-bit-SBGGR-mode-by-default.patch \
-    file://0017-media-rcar-vin-Fix-VNIS_REG-settings.patch \
-    file://0018-media-i2c-imx219-Align-default-frame-width-to-32.patch \
-    file://0019-kbuild-remove-unneeded-O-option-to-dtc.patch \
-    file://0020-arm64-dts-renesas-Add-support-CSI-cameras-for-CCPF-S.patch \
-    file://0021-arm64-dts-renesas-separate-node-which-depends-IMX219.patch \
+    file://0006-arm64-dts-renesas-Add-support-for-CCPF-SK-with-R-Car.patch \
+    file://0007-arm64-dts-renesas-Add-support-pwm0-for-CCPF-SK.patch \
+    file://0008-PCI-rcar-Don-t-allocate-extra-memory-for-the-MSI-cap.patch \
+    file://0009-PCI-rcar-Convert-to-MSI-domains.patch \
+    file://0010-media-v4l2-async-workaround-for-RCAR-VIN.patch \
+    file://0011-media-platform-rcar-vin-add-GREY-format.patch \
+    file://0012-media-platform-rcar-vin-add-G-S_PARM-ioctl.patch \
+    file://0013-media-i2c-imx219-Set-subdevice-fwnode.patch \
+    file://0014-media-i2c-imx219-Set-8-bit-SBGGR-mode-by-default.patch \
+    file://0015-media-rcar-vin-Fix-VNIS_REG-settings.patch \
+    file://0016-media-i2c-imx219-Align-default-frame-width-to-32.patch \
+    file://0017-kbuild-remove-unneeded-O-option-to-dtc.patch \
+    file://0018-arm64-dts-renesas-Add-support-CSI-cameras-for-CCPF-S.patch \
+    file://0019-arm64-dts-renesas-separate-node-which-depends-IMX219.patch \
     ${@oe.utils.conditional("USE_LTTNG", "1", "${SUPPORT_LTTNG}", "", d)} \
     ${@oe.utils.conditional("USE_CSI_CAMERA", "1", "${SUPPORT_CSI_CAMERA}", "", d)} \
 "

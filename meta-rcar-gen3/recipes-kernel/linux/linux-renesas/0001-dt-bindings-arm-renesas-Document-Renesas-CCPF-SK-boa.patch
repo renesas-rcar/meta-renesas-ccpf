@@ -1,7 +1,7 @@
-From b239558e8c4be06b4b988b596377954d46d3d4e9 Mon Sep 17 00:00:00 2001
+From 57dc4936c2e5b1176f90fd7aa950a8e9326cdddf Mon Sep 17 00:00:00 2001
 From: Tomohiro Komagata <tomohiro.komagata.aj@renesas.com>
 Date: Sat, 29 Jan 2022 01:42:12 +0900
-Subject: [PATCH 1/8] dt-bindings: arm: renesas: Document Renesas CCPF-SK
+Subject: [PATCH 01/19] dt-bindings: arm: renesas: Document Renesas CCPF-SK
  boards
 
 Document the use of the Connected car platform evaluation board
@@ -35,5 +35,5 @@ index ff94c45eefb0..2dcec4c6b35f 100644
          items:
            - enum:
 -- 
-2.25.1
+2.34.1
 

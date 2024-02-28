@@ -1,7 +1,7 @@
-From 2bcf28c514572a32a7350f67a55f73efe81d58d1 Mon Sep 17 00:00:00 2001
+From 1e8b31069811efd2dab8b560ed4f7b97394168c9 Mon Sep 17 00:00:00 2001
 From: Tomohiro Komagata <tomohiro.komagata.aj@renesas.com>
 Date: Wed, 7 Jul 2021 16:40:38 +0900
-Subject: [PATCH 2/8] arm64: dts: renesas: Add support for CCPF SK with R-Car
+Subject: [PATCH 02/19] arm64: dts: renesas: Add support for CCPF SK with R-Car
  H3 v2.0/v3.0
 
 Add initial support for the Renesas CCPF SK (Connected Car Platform
@@ -221,5 +221,5 @@ index 000000000000..634190c9c3ca
 +	status = "okay";
 +};
 -- 
-2.25.1
+2.34.1
 

@@ -1,7 +1,7 @@
-From 244491718537fe59017f696cddb09e4197f2e117 Mon Sep 17 00:00:00 2001
+From 564fc058ff2272d1d2636455fe04649e1183b8fa Mon Sep 17 00:00:00 2001
 From: Yuya Hamamachi <yuya.hamamachi.sx@renesas.com>
 Date: Tue, 9 Nov 2021 16:05:16 +0900
-Subject: [PATCH 7/8] arm64: dts: renesas: Add support for CCPF SK with R-Car
+Subject: [PATCH 06/19] arm64: dts: renesas: Add support for CCPF SK with R-Car
  H3e-2G v3.0
 
 Add initial support for the Renesas CCPF SK (Connected Car Platform
@@ -65,5 +65,5 @@ index 000000000000..558245788893
 +	remote-endpoint = <&rcar_dw_hdmi1_out>;
 +};
 -- 
-2.25.1
+2.34.1
 

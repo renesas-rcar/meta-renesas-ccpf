@@ -1,7 +1,7 @@
-From f468c14aa9adb36a9c3dc08d5e36d2abfe577889 Mon Sep 17 00:00:00 2001
+From 09700b78ad844f5f1393b3e80571ce4115e49478 Mon Sep 17 00:00:00 2001
 From: Tomohiro Komagata <tomohiro.komagata.aj@renesas.com>
 Date: Tue, 15 Feb 2022 15:46:13 +0900
-Subject: [PATCH 20/21] arm64: dts: renesas: Add support CSI cameras for
+Subject: [PATCH 18/19] arm64: dts: renesas: Add support CSI cameras for
  CCPF-SK
 
 Add support IMX219 cameras connected to CN12 and CN13.
@@ -229,5 +229,5 @@ index 7db95110078e..abaeb6acc4a3 100644
 +#include "ulcb-ccpf-sk-cn12-imx219.dtsi"
 +#include "ulcb-ccpf-sk-cn13-imx219.dtsi"
 -- 
-2.25.1
+2.34.1
 

@@ -1,7 +1,7 @@
-From 75d313ba57e13d62888917bd460a01655b264610 Mon Sep 17 00:00:00 2001
+From ffd80f67af8334e2762f7b95326a031a29e7b12a Mon Sep 17 00:00:00 2001
 From: Tomohiro Komagata <tomohiro.komagata.aj@gmail.com>
 Date: Tue, 30 Nov 2021 14:26:54 +0900
-Subject: [PATCH 8/8] arm64: dts: renesas: Add support pwm0 for CCPF-SK
+Subject: [PATCH 07/19] arm64: dts: renesas: Add support pwm0 for CCPF-SK
 
 pwm0 is used for the fan control via RL78 on the CCPF-SK boards
 
@@ -41,5 +41,5 @@ index 04e84b3f9380..7db95110078e 100644
  	clock-frequency = <50000000>;
  };
 -- 
-2.25.1
+2.34.1
 

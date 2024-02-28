@@ -1,8 +1,8 @@
-From 5424ea9c8247136ef06594837f975d15db820cd5 Mon Sep 17 00:00:00 2001
+From a5e4df3256fb66182e1e70b601ace7f10f701565 Mon Sep 17 00:00:00 2001
 From: Ayumi Nakamichi <ayumi.nakamichi.kf@renesas.com>
 Date: Wed, 21 Jul 2021 16:06:59 +0900
-Subject: [PATCH 4/8] soc: renesas: rcar_s2ram: Add new support for S2RAM exec
- function
+Subject: [PATCH 04/19] soc: renesas: rcar_s2ram: Add new support for S2RAM
+ exec function
 
 Signed-off-by: Ayumi Nakamichi <ayumi.nakamichi.kf@renesas.com>
 ---
@@ -109,5 +109,5 @@ index 000000000000..e6d4cc83017e
 +
 +module_platform_driver(rcar_s2ram_driver);
 -- 
-2.25.1
+2.34.1
 

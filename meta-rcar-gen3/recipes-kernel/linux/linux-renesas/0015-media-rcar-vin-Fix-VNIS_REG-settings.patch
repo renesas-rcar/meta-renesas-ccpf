@@ -1,7 +1,7 @@
-From 0927c8fdf0e281e86e600637353642230e465be3 Mon Sep 17 00:00:00 2001
+From c3f765ba8476bf93ed04a1ebab26344326e162d3 Mon Sep 17 00:00:00 2001
 From: Valentine Barshak <valentine.barshak@cogentembedded.com>
 Date: Wed, 12 May 2021 01:54:45 +0300
-Subject: [PATCH 17/18] media: rcar-vin: Fix VNIS_REG settings
+Subject: [PATCH 15/19] media: rcar-vin: Fix VNIS_REG settings
 
 Write stride to  VNIS_REG (Video n Image Stride)
 Register instead of image width. This is based
@@ -14,7 +14,7 @@ Signed-off-by: Valentine Barshak <valentine.barshak@cogentembedded.com>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/media/platform/rcar-vin/rcar-dma.c b/drivers/media/platform/rcar-vin/rcar-dma.c
-index 074711276552..641b596f28bc 100644
+index 79e88568e4b8..dad61ad97d77 100644
 --- a/drivers/media/platform/rcar-vin/rcar-dma.c
 +++ b/drivers/media/platform/rcar-vin/rcar-dma.c
 @@ -754,7 +754,7 @@ static void rvin_crop_scale_comp(struct rvin_dev *vin)
@@ -27,5 +27,5 @@ index 074711276552..641b596f28bc 100644
  
  /* -----------------------------------------------------------------------------
 -- 
-2.25.1
+2.34.1
 

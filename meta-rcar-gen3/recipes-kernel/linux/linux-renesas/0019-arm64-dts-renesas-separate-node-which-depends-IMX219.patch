@@ -1,7 +1,7 @@
-From 39d62b8770e2350165bce691e15a56756c10e350 Mon Sep 17 00:00:00 2001
+From 43f67493970d3e2c059b367751957e92c27f780c Mon Sep 17 00:00:00 2001
 From: Tomohiro Komagata <tomohiro.komagata.aj@renesas.com>
 Date: Tue, 15 Feb 2022 16:15:07 +0900
-Subject: [PATCH 21/21] arm64: dts: renesas: separate node which depends IMX219
+Subject: [PATCH 19/19] arm64: dts: renesas: separate node which depends IMX219
  for CCPF-SK
 
 This commit separates nodes for CSI camera connected to CN12/CN13
@@ -381,5 +381,5 @@ index abaeb6acc4a3..3e04f31dd722 100644
 -#include "ulcb-ccpf-sk-cn12-imx219.dtsi"
 -#include "ulcb-ccpf-sk-cn13-imx219.dtsi"
 -- 
-2.25.1
+2.34.1
 

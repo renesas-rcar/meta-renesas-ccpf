@@ -432,8 +432,7 @@ IMAGE_INSTALL_append = " cmake nodejs python3 python3-pip git"
 IMAGE_INSTALL_append = " trace-cmd"
 ## Configuration for lttng
 USE_LTTNG = "1"
-PREFERRED_VERSION_lttng-modules = "2.12.4"
-
+PREFERRED_VERSION_lttng-modules = "2.13.9"
 # for Kernel
 IMAGE_INSTALL_append = " kernel kernel-devicetree kernel-devsrc"
 

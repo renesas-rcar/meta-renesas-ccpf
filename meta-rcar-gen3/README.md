@@ -24,7 +24,6 @@ This layer depends on:
 
 Please submit any patches against the meta-renesas-ccpf/meta-rcar-gen3 layer to the the maintainers:
 
-* Maintainer: Tomohiro Komagata <tomohiro.komagata.aj at renesas.com>
 * Maintainer: Yuya Hamamachi <yuya.hamamachi.sx at renesas.com>
 
 ## Quick Start

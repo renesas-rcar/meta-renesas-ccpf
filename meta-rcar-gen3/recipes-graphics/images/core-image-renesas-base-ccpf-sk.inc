@@ -1,5 +1,5 @@
 # Basic packages
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
 	can-utils \
 	iproute2 \
 	ccpfsk-fancontrol \

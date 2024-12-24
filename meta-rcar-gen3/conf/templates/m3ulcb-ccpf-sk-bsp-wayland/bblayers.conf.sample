@@ -13,4 +13,6 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-renesas-ccpf/meta-rcar-gen3 \
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-openembedded/meta-python \
+  ${TOPDIR}/../meta-openembedded/meta-gnome \
+  ${TOPDIR}/../meta-openembedded/meta-networking \
   "

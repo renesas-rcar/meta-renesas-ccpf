@@ -9,7 +9,7 @@ SUPPORT_CSI_CAMERA = " \
     file://imx219.cfg \
 "
 
-SRC_URI:append_ulcb = " \
+SRC_URI:append:ulcb = " \
     file://can.cfg \
     file://nvme.cfg \
     file://0001-dt-bindings-arm-renesas-Document-Renesas-CCPF-SK-boa.patch \
@@ -42,13 +42,13 @@ ULCB_CCPF_SK_DTBO = " \
     ", "", d)} \
 "
 
-KERNEL_DEVICETREE:append_h3ulcb = " \
+KERNEL_DEVICETREE:append:h3ulcb = " \
     renesas/r8a77951-ulcb-ccpf-sk.dtb \
     renesas/r8a779m1-ulcb-ccpf-sk.dtb \
     ${ULCB_CCPF_SK_DTBO} \
 "
 
-KERNEL_DEVICETREE:append_m3ulcb = " \
+KERNEL_DEVICETREE:append:m3ulcb = " \
     renesas/r8a77960-ulcb-ccpf-sk.dtb \
     renesas/r8a77961-ulcb-ccpf-sk.dtb \
     ${ULCB_CCPF_SK_DTBO} \

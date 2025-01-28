@@ -5,3 +5,7 @@ IMAGE_INSTALL:append = " \
 	ccpfsk-fancontrol \
 	nvme-cli \
 "
+
+# Add additional image type
+IMAGE_FSTYPES:append = " wic.gz"
+

@@ -4,6 +4,7 @@ IMAGE_INSTALL:append = " \
 	iproute2 \
 	ccpfsk-fancontrol \
 	nvme-cli \
+	media-ctl \
 "
 
 # Add additional image type
